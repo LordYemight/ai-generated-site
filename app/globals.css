@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 :root {
-  --primary: #2E2E2E;
-  --secondary: #F7F7F7;
-  --accent: #FF4D00;
+  --primary: #F7F7F7;
+  --secondary: #F2C464;
+  --accent: #FFC700;
 }
 
 .animate-slideIn {
@@ -14,12 +14,23 @@
 
 @keyframes slideIn {
   0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  0% {
     opacity: 0;
-    transform: translateX(-100%);
   }
   100% {
     opacity: 1;
-    transform: translateX(0);
   }
 }
 

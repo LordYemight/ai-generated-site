@@ -2,11 +2,11 @@ import { Inter } from 'next/font/google';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'Patrick Clothings — Empowering Fashion',
-  description: 'Premium fashion brand offering high-quality clothes, shoes & accessories',
+  title: 'Lavie du Vivants — It\'s All About The TASTE',
+  description: 'Food & Spices',
 };
 
-import '../styles/globals.css';
+import '../globals.css';
 
 export default function RootLayout({ children }) {
   return (
